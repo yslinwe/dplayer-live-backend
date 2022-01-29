@@ -50,14 +50,14 @@
 
   var dp = new DPlayer({
     container: document.getElementById('player'),
-    live: true,
+    // live: true,
     autoplay: true,
     danmaku: true,
     apiBackend: createApiBackend('ws://localhost:1207', function (dan) {
       dp.danmaku.draw(dan);
     }),
     video: {
-      url: 'http://localhost:8080/stream/main/index.m3u8',
+      url: 'https://cdn.jsdelivr.net/gh/popoYSL/adssdas/v/74cc24692dac38f0730b81df49c32980/index.m3u8?123456.key',
       type: 'hls'
     }
   });
